@@ -13,7 +13,7 @@
 }
 
 .btn:hover [class^="icon-f-"].gray,
-a:hover~[class*=" icon-f-"].gray,
+.btn:hover [class*=" icon-f-"].gray,
 .btn [class^="icon-f-"].gray:hover,
 .btn [class*=" icon-f-"].gray:hover,
 [class^="icon-f-"].gray:hover,
