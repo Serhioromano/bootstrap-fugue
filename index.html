@@ -9,6 +9,7 @@
 			float: left;
 			width: 25%;
 		}
+
 		ul.unstyled li small span {
 			color: darkgray;
 		}
@@ -17,30 +18,72 @@
 <body>
 <div class="container">
 
-	<section>
-		<div class="page-header">
-			<h1>Bootstrap Fugue icons set</h1>
-		</div>
-
-		<p>You can install it locally include to your project with <code>bower</code> package manager</p>
-
-		<pre>$ bower install bootstrap-fugue-icons</pre>
-
-		<p>Or you can use temporary CDN by including this link right after you include bootstrap.css</p>
-
-		<pre>&lt;link rel="stylesheet" href="http://bootstrap-fugue.azurewebsites.net/css/bootstrap-fugue-min.css"/&gt;</pre>
-
-		<p>If we reach high traffic then we will find good CDN service who would sponsor to host our project.</p>
+<section>
+	<div class="page-header">
+		<h1>Bootstrap Fugue icons set</h1>
+	</div>
 
 
-	</section>
-	<section>
+	<h2>Installation</h2>
 
-		<div class="page-header">
-			<h1>Icons Demo</h1>
-		</div>
+	<p>You can install it locally include to your project with <code>bower</code> package manager</p>
 
-		<ul class="unstyled">
+	<pre>$ bower install bootstrap-fugue-icons</pre>
+
+	<p>Or you can use temporary CDN by including this link right after you include bootstrap.css</p>
+
+	<pre>&lt;link rel="stylesheet" href="http://bootstrap-fugue.azurewebsites.net/css/bootstrap-fugue-min.css"/&gt;</pre>
+
+	<p>If we reach high traffic then we will find good CDN service who would sponsor to host our project.</p>
+
+	<h2>Features</h2>
+
+	<ul>
+		<li><p>
+			Since we have special prefix <code>f-</code> it does not controdict with any other icons or override any
+			icon be it Bootstrap icons or Font Awesome. It means that if you connect this CSS all your old icons will
+			continue to be displayed.</p>
+			</p>
+		</li>
+		<li><p>You can link 2 CSS files: <code>bootstrap-fugue-min.css</code> or
+			<code>bootstrap-fugue-shadow-min.css</code> to render icons with shadow.</p></li>
+		<li><p>Special <code>gray</code> class will create special grayscale effect with normal icon on
+			<code>:hover</code>. This
+		       uses pure CSS and works in Firefox 3.5+, IE6-9+, Google Chrome & Safari 6+</p>
+
+			<pre>&lt;i class="icon-f-abacus gray"&gt;&lt;/i&gt;</pre>
+
+			<p>Here is the demo <i class="icon-f-abacus gray"></i> <i class="icon-f-alarm-clock--arrow gray"></i></p>
+
+			 <p>It will aslo work inside a button <a href="#" class="btn btn-small"><i class="icon-f-alarm-clock-select gray"></i> Timer</a></p>
+		</li>
+	</ul>
+
+	<h2>Why not sprite technique?</h2>
+
+	<p>First of all sprite technique is good if you have no too many icons. Estimation sprite size for whole Fugue set
+	   is around 2Mb. And I am sure no one will use even 5% of those icons in single project. So it is absolutely
+	   useless to load all icons in order to show only few of them.
+
+	   When you have sprite it alway loads escessive amount of data on first load. Icons may viray from page to page so
+	   acualy half of the sprite should not be acually loaded even if your sprite contain only icons you use through
+	   your project.</p>
+
+	<p>If you use something like FontAwesome you get the same problem. In order to render even one icon whole font
+	   library have to be loaded.</p>
+
+	<p>This technique when we load single icon file on every class does not delay page render. Page is shown immediately
+	   and the start to render icon by icon. And all icons are cached along with CSS which is quite big :)</p>
+
+
+</section>
+<section>
+
+<div class="page-header">
+	<h1>Icons Demo</h1>
+</div>
+
+<ul class="unstyled">
 			<li><i class="icon-f-abacus"></i> <small><span>icon-f-</span>abacus</small></li>
 			<li><i class="icon-f-acorn"></i> <small><span>icon-f-</span>acorn</small></li>
 			<li><i class="icon-f-address-book--arrow"></i> <small><span>icon-f-</span>address-book--arrow</small></li>
@@ -3615,10 +3658,7 @@
 
 
 
-
-
-
-	</section>
+</section>
 
 
 </body>

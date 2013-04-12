@@ -1,0 +1,24 @@
+[class^="icon-f-"], [class*=" icon-f-"] {
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+}
+
+[class^="icon-f-"].gray,
+[class*=" icon-f-"].gray {
+	filter: url(filter.svg#grayscale);
+	filter: gray;
+	-webkit-filter: grayscale(1);
+	opacity: 0.5;
+}
+
+.btn:hover [class^="icon-f-"].gray,
+a:hover~[class*=" icon-f-"].gray,
+.btn [class^="icon-f-"].gray:hover,
+.btn [class*=" icon-f-"].gray:hover,
+[class^="icon-f-"].gray:hover,
+[class*=" icon-f-"].gray:hover {
+	filter: none;
+	-webkit-filter: grayscale(0);
+	opacity: 1;
+}

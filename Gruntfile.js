@@ -6,7 +6,8 @@ module.exports = function(grunt) {
 		cssmin: {
 			compress: {
 				files: {
-					'css/bootstrap-fugue-min.css': ['css/bootstrap-fugue.css']
+					'css/bootstrap-fugue-min.css': ['css/bootstrap-fugue.css'],
+					'css/bootstrap-fugue-shadow-min.css': ['css/bootstrap-fugue-shadow.css']
 				}
 			}
 		}
