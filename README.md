@@ -1,7 +1,7 @@
 Bootstrap Fugue Icons Set
 ===============
 
-This is [Fugues][f]^* icons set adopted to [bootstrap][b] style icons.
+This is [Fugues][f]* icons set adopted to [bootstrap][b] style icons.
 
 Please see [demo and instructions here](http://bootstrap-fugue.azurewebsites.net)
 
