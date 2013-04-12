@@ -3,7 +3,8 @@
 	"version": "0.0.1",
 	"description": "Bootstrap styled icons",
 	"main": [
-		"./css/bootstrap-fugue.css"
+		"./css/bootstrap-fugue-min.css",
+		"./css/bootstrap-fugue-shadow-min.css"
 	],
 	"scripts": {
 		"test": ""
