@@ -1,0 +1,13 @@
+{
+  "name": "bootstrap-fugue-icons",
+  "version": "0.1",
+  "main": "./scc/bootstrap-fugue-min.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "devDependencies": {
+    "bootstrap": "~2.3.1"
+  }
+}
